@@ -1,0 +1,12 @@
+.tarjeta {
+    display: flex;
+    justify-content: center;
+}
+
+.tarjeta-foto {
+    padding-right: 50px;
+}
+
+.tarjeta-foto img {
+    width: 224px;
+}
