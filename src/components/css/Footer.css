@@ -1,0 +1,10 @@
+footer {
+    width: 100%;
+    background-color: #c4c4c4;
+    bottom: 0;
+    position: fixed;
+}
+
+footer p {
+    padding: 1rem 0 1rem 2rem;
+}

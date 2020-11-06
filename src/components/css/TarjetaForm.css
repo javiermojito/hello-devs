@@ -1,0 +1,10 @@
+.tarjetaform {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.tarjetaform-form {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+}
