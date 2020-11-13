@@ -25,10 +25,7 @@ class Tarjeta extends React.Component {
     return (
       <div className="tarjeta">
         <div className="tarjeta-foto">
-          <img
-            src="https://s.tcdn.co/4dd/300/4dd300fd-0a89-3f3d-ac53-8ec93976495e/1.png"
-            alt="foto"
-          />
+          <img src={this.props.foto} alt="foto" />
         </div>
         <div className="tarjeta-info">
           <span id="tarjeta-nombre">

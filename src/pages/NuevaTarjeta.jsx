@@ -1,8 +1,7 @@
 import React from "react";
 import Tarjeta from "../components/Tarjeta";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import TarjetaForm from "../components/TarjetaForm";
+import "./css/NuevaTarjeta.css";
 
 class NuevaTarjeta extends React.Component {
   state = {
@@ -25,22 +24,25 @@ class NuevaTarjeta extends React.Component {
 
   render() {
     return (
-      <div>
-        <Navbar />
+      <React.Fragment>
         <div className="container">
-          <TarjetaForm
-            onChange={this.handleChange}
-            formValues={this.state.form}
-          />
-          <Tarjeta
-            nombre={this.state.form.nombre}
-            apellido={this.state.form.apellido}
-            twitter={this.state.form.twitter}
-            rol={this.state.form.rol}
-          />
+          <div>
+            <TarjetaForm
+              onChange={this.handleChange}
+              formValues={this.state.form}
+            />
+          </div>
+
+          <div className="nuevatarjeta-preview">
+            <Tarjeta
+              nombre={this.state.form.nombre}
+              apellido={this.state.form.apellido}
+              twitter={this.state.form.twitter}
+              rol={this.state.form.rol}
+            />
+          </div>
         </div>
-        <Footer />
-      </div>
+      </React.Fragment>
     );
   }
 }

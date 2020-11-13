@@ -7,14 +7,14 @@ class TarjetaLista extends React.Component {
     return (
       <div className="tarjetalista">
         <ul>
-          {this.props.data.map(({ id, nombre, apellido, twitter, rol }) => {
+          {this.props.data.map(({ id, name, status, species, image }) => {
             return (
               <li key={id}>
                 <Tarjeta
-                  nombre={nombre}
-                  apellido={apellido}
-                  twitter={twitter}
-                  rol={rol}
+                  nombre={name}
+                  twitter={status}
+                  rol={species}
+                  foto={image}
                 />
               </li>
             );

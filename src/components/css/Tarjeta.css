@@ -13,6 +13,7 @@
 
 .tarjeta-foto img {
   width: 100px;
+  border-radius: 50%;
 }
 .tarjeta-info {
   text-align: left;
