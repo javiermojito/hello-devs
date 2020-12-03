@@ -10,7 +10,7 @@ const App = () => {
     <BrowserRouter>
       <Layout>
         <Switch>
-          <Route exact path="/tarjetas" component={Tarjetas} />
+          <Route exact path="/hello-devs" component={Tarjetas} />
           <Route exact path="/tarjetas/nueva" component={NuevaTarjeta} />
           <Route component={NotFound} />
         </Switch>
